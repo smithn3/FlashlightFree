@@ -126,9 +126,9 @@ public class MainActivity extends Activity {
  			int  temperature= intent.getIntExtra(BatteryManager.EXTRA_TEMPERATURE,0);
  			int  voltage= intent.getIntExtra(BatteryManager.EXTRA_VOLTAGE,0);
  			
-  //float percent = (level/scale)*100.0f;
+  int percent = (int)(((double)level/(double)scale)*100);
   
- 			batteryInfo.setText("Battery: "+level+"%");
+ 			batteryInfo.setText("Battery\n "+percent+"%");
  			
  			
 // 			batteryInfo.setText(
